@@ -1,0 +1,17 @@
+def second(arr):
+    first = second = 0
+    for num in arr:
+        if num > first :
+            second  = first 
+            first = num 
+        elif second < num < first :
+            second = num
+
+    if second == 0:
+        print("no second")
+
+    return second
+
+
+print(second([10,20,30,40,50]))
+    
